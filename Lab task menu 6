@@ -1,0 +1,106 @@
+//Importing Saanner class
+import java.util.Scanner;
+ 
+//Creating Class
+public class Menucard {
+ 
+    //Creating main method
+    public static void main(String[] args){
+ 
+        //Declaring all variables
+        int choice;
+        Scanner scanner = new Scanner(System.in);
+        //Creating infinite while loop
+        while(true) {
+ 
+            //Creating menu
+            System.out.println("Press 1 for Tea");
+            System.out.println("Press 2 for Cold Drink");
+            System.out.println("Press 3 for Ice Cream");
+            System.out.println("Press 4 for Soda ");
+            System.out.println("Press 5 for lasse ");
+			System.out.println("Press 6 for water bottle ");
+			System.out.println("Press 7 for biryani");
+            System.out.println("Press 8 for burger ");
+		    System.out.println("Press 9 for mayo roll");
+		    System.out.println("Press 10 for tikka masala");
+		    System.out.println("Press 11 to Quit\n \n");
+		   
+		   
+		   
+		    //Asking user to make choice
+            System.out.println("Make your choice");
+            choice = scanner.nextInt();
+ 
+            //Creating switch case branch
+            switch (choice) {
+ 
+                //First case for Item
+                case 1:
+                    System.out.println("Tea Rs: 50");
+                    break;
+ 
+                //Second case for Item
+                case 2:
+                    System.out.println("Cold Drink Rs: 60");
+                    break;
+ 
+                //Third case for Item
+                case 3:
+                    System.out.println("Ice Cream Rs: 150");
+                    break;
+ 
+                //Fourth case for Item
+                case 4:
+                    System.out.println("Soda Rs: 40");
+                    break;
+					
+					
+				//Fifth case for Item
+                case 5:
+                    System.out.println("lasse Rs: 70");
+                    break;
+					
+					
+			
+                //Sixth case for Item
+                case 6:
+                    System.out.println("water Bottle Rs: 40");
+                    break;
+					
+					
+					
+                //Seventh case for Item
+                case 7:
+                    System.out.println("biryani Rs 130");
+                    break;
+					
+					
+                //Eighth case for Item
+                case 8:
+                    System.out.println("burger Rs 300");
+                    break;
+					
+					
+                //Ninth case for Item
+                case 9:
+                    System.out.println("mayo roll Rs 240");
+                    break;
+					
+					
+                //Tenth case for Item
+                case 10:
+                    System.out.println("tikka masala Rs: 290 ");
+                    break;
+ 
+                //Eleventh case to quit the program
+                case 11:
+                    System.exit(0);
+ 
+                //default case to display the message invalid choice made by the user
+                default:
+                    System.out.println("Invalid choice!!! Please make a valid choice. \\n\\n");
+            }
+        }
+    }
+}
